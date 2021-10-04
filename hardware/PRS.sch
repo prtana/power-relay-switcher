@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Power Relay Switcher"
@@ -14,79 +14,486 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L T9AS1D12-5:T9AS1D12-5 K?
+L T9AS1D12-5:T9AS1D12-5 K1
 U 1 1 6158626A
-P 5900 1800
-F 0 "K?" H 6500 2065 50  0000 C CNN
-F 1 "T9AS1D12-5" H 6500 1974 50  0000 C CNN
-F 2 "T9AS1D125" H 6950 1900 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 6950 1800 50  0001 L CNN
-F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 6950 1700 50  0001 L CNN "Description"
-F 5 "20.4" H 6950 1600 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 6950 1500 50  0001 L CNN "Manufacturer_Name"
-F 7 "T9AS1D12-5" H 6950 1400 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "655-T9AS1D12-5" H 6950 1300 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 6950 1200 50  0001 L CNN "Mouser Price/Stock"
-F 10 "T9AS1D12-5" H 6950 1100 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 6950 1000 50  0001 L CNN "Arrow Price/Stock"
-	1    5900 1800
+P 13500 2000
+F 0 "K1" H 14100 2265 50  0000 C CNN
+F 1 "T9AS1D12-5" H 14100 2174 50  0000 C CNN
+F 2 "T9AS1D125" H 14550 2100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 14550 2000 50  0001 L CNN
+F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 14550 1900 50  0001 L CNN "Description"
+F 5 "20.4" H 14550 1800 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 14550 1700 50  0001 L CNN "Manufacturer_Name"
+F 7 "T9AS1D12-5" H 14550 1600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "655-T9AS1D12-5" H 14550 1500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 14550 1400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "T9AS1D12-5" H 14550 1300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 14550 1200 50  0001 L CNN "Arrow Price/Stock"
+	1    13500 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L T9AS1D12-5:T9AS1D12-5 K?
+L T9AS1D12-5:T9AS1D12-5 K2
 U 1 1 615869C1
-P 5900 2350
-F 0 "K?" H 6500 2615 50  0000 C CNN
-F 1 "T9AS1D12-5" H 6500 2524 50  0000 C CNN
-F 2 "T9AS1D125" H 6950 2450 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 6950 2350 50  0001 L CNN
-F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 6950 2250 50  0001 L CNN "Description"
-F 5 "20.4" H 6950 2150 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 6950 2050 50  0001 L CNN "Manufacturer_Name"
-F 7 "T9AS1D12-5" H 6950 1950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "655-T9AS1D12-5" H 6950 1850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 6950 1750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "T9AS1D12-5" H 6950 1650 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 6950 1550 50  0001 L CNN "Arrow Price/Stock"
-	1    5900 2350
+P 13500 3900
+F 0 "K2" H 14100 4165 50  0000 C CNN
+F 1 "T9AS1D12-5" H 14100 4074 50  0000 C CNN
+F 2 "T9AS1D125" H 14550 4000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 14550 3900 50  0001 L CNN
+F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 14550 3800 50  0001 L CNN "Description"
+F 5 "20.4" H 14550 3700 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 14550 3600 50  0001 L CNN "Manufacturer_Name"
+F 7 "T9AS1D12-5" H 14550 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "655-T9AS1D12-5" H 14550 3400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 14550 3300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "T9AS1D12-5" H 14550 3200 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 14550 3100 50  0001 L CNN "Arrow Price/Stock"
+	1    13500 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L T9AS1D12-5:T9AS1D12-5 K?
+L T9AS1D12-5:T9AS1D12-5 K3
 U 1 1 61586E92
-P 5900 2850
-F 0 "K?" H 6500 3115 50  0000 C CNN
-F 1 "T9AS1D12-5" H 6500 3024 50  0000 C CNN
-F 2 "T9AS1D125" H 6950 2950 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 6950 2850 50  0001 L CNN
-F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 6950 2750 50  0001 L CNN "Description"
-F 5 "20.4" H 6950 2650 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 6950 2550 50  0001 L CNN "Manufacturer_Name"
-F 7 "T9AS1D12-5" H 6950 2450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "655-T9AS1D12-5" H 6950 2350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 6950 2250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "T9AS1D12-5" H 6950 2150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 6950 2050 50  0001 L CNN "Arrow Price/Stock"
-	1    5900 2850
+P 13500 5950
+F 0 "K3" H 14100 6215 50  0000 C CNN
+F 1 "T9AS1D12-5" H 14100 6124 50  0000 C CNN
+F 2 "T9AS1D125" H 14550 6050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 14550 5950 50  0001 L CNN
+F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 14550 5850 50  0001 L CNN "Description"
+F 5 "20.4" H 14550 5750 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 14550 5650 50  0001 L CNN "Manufacturer_Name"
+F 7 "T9AS1D12-5" H 14550 5550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "655-T9AS1D12-5" H 14550 5450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 14550 5350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "T9AS1D12-5" H 14550 5250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 14550 5150 50  0001 L CNN "Arrow Price/Stock"
+	1    13500 5950
 	1    0    0    -1  
 $EndComp
 $Comp
-L T9AS1D12-5:T9AS1D12-5 K?
+L T9AS1D12-5:T9AS1D12-5 K4
 U 1 1 61587331
-P 5900 3350
-F 0 "K?" H 6500 3615 50  0000 C CNN
-F 1 "T9AS1D12-5" H 6500 3524 50  0000 C CNN
-F 2 "T9AS1D125" H 6950 3450 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 6950 3350 50  0001 L CNN
-F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 6950 3250 50  0001 L CNN "Description"
-F 5 "20.4" H 6950 3150 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 6950 3050 50  0001 L CNN "Manufacturer_Name"
-F 7 "T9AS1D12-5" H 6950 2950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "655-T9AS1D12-5" H 6950 2850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 6950 2750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "T9AS1D12-5" H 6950 2650 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 6950 2550 50  0001 L CNN "Arrow Price/Stock"
-	1    5900 3350
+P 13500 8000
+F 0 "K4" H 14100 8265 50  0000 C CNN
+F 1 "T9AS1D12-5" H 14100 8174 50  0000 C CNN
+F 2 "T9AS1D125" H 14550 8100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/T9AS1D12-5.pdf" H 14550 8000 50  0001 L CNN
+F 4 "TE CONNECTIVITY / POTTER & BRUMFIELD - T9AS1D12-5 - POWER RELAY, SPST-NO, 30A, 277VAC, TH" H 14550 7900 50  0001 L CNN "Description"
+F 5 "20.4" H 14550 7800 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 14550 7700 50  0001 L CNN "Manufacturer_Name"
+F 7 "T9AS1D12-5" H 14550 7600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "655-T9AS1D12-5" H 14550 7500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/T9AS1D12-5?qs=KHldbOyX8TXPoKXQH56yNg%3D%3D" H 14550 7400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "T9AS1D12-5" H 14550 7300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/t9as1d12-5/te-connectivity" H 14550 7200 50  0001 L CNN "Arrow Price/Stock"
+	1    13500 8000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_AAK D1
+U 1 1 6158F9E3
+P 12650 1700
+F 0 "D1" V 12629 1844 50  0000 L CNN
+F 1 "MMBD7000HC" V 12720 1844 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12650 1700 50  0001 C CNN
+F 3 "~" H 12650 1700 50  0001 C CNN
+	1    12650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_AAK D2
+U 1 1 61590B11
+P 12650 3600
+F 0 "D2" V 12629 3744 50  0000 L CNN
+F 1 "MMBD7000HC" V 12720 3744 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12650 3600 50  0001 C CNN
+F 3 "~" H 12650 3600 50  0001 C CNN
+	1    12650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_AAK D3
+U 1 1 615913C2
+P 12650 5650
+F 0 "D3" V 12629 5794 50  0000 L CNN
+F 1 "MMBD7000HC" V 12720 5794 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12650 5650 50  0001 C CNN
+F 3 "~" H 12650 5650 50  0001 C CNN
+	1    12650 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_AAK D4
+U 1 1 61591861
+P 12650 7700
+F 0 "D4" V 12629 7844 50  0000 L CNN
+F 1 "MMBD7000HC" V 12720 7844 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12650 7700 50  0001 C CNN
+F 3 "~" H 12650 7700 50  0001 C CNN
+	1    12650 7700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D5
+U 1 1 61593C4A
+P 12650 1200
+F 0 "D5" V 12696 1120 50  0000 R CNN
+F 1 "D_Zener" V 12605 1120 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 12650 1200 50  0001 C CNN
+F 3 "~" H 12650 1200 50  0001 C CNN
+	1    12650 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61594C01
+P 12150 2650
+F 0 "R1" H 12220 2696 50  0000 L CNN
+F 1 "100k" H 12220 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 2650 50  0001 C CNN
+F 3 "~" H 12150 2650 50  0001 C CNN
+	1    12150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 6159AA7D
+P 12550 2400
+F 0 "Q1" H 12755 2446 50  0000 L CNN
+F 1 "PMV37ENEA" H 12755 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12750 2500 50  0001 C CNN
+F 3 "~" H 12550 2400 50  0001 C CNN
+	1    12550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 6159C381
+P 12550 4300
+F 0 "Q2" H 12755 4346 50  0000 L CNN
+F 1 "PMV37ENEA" H 12755 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12750 4400 50  0001 C CNN
+F 3 "~" H 12550 4300 50  0001 C CNN
+	1    12550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 6159CC91
+P 12550 6350
+F 0 "Q3" H 12755 6396 50  0000 L CNN
+F 1 "PMV37ENEA" H 12755 6305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12750 6450 50  0001 C CNN
+F 3 "~" H 12550 6350 50  0001 C CNN
+	1    12550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q4
+U 1 1 6159D500
+P 12550 8400
+F 0 "Q4" H 12755 8446 50  0000 L CNN
+F 1 "PMV37ENEA" H 12755 8355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 12750 8500 50  0001 C CNN
+F 3 "~" H 12550 8400 50  0001 C CNN
+	1    12550 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 2800 12150 2900
+Wire Wire Line
+	12150 2900 12650 2900
+Wire Wire Line
+	12650 2900 12650 2600
+Wire Wire Line
+	12650 2900 12650 3000
+Connection ~ 12650 2900
+$Comp
+L power:GND #PWR01
+U 1 1 6159F893
+P 12650 3000
+F 0 "#PWR01" H 12650 2750 50  0001 C CNN
+F 1 "GND" H 12655 2827 50  0000 C CNN
+F 2 "" H 12650 3000 50  0001 C CNN
+F 3 "" H 12650 3000 50  0001 C CNN
+	1    12650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 2400 12150 2400
+Wire Wire Line
+	12150 2400 12150 2500
+Wire Wire Line
+	12650 2000 12750 2000
+Wire Wire Line
+	12750 2000 12750 1900
+Wire Wire Line
+	12650 2000 12650 1900
+Connection ~ 12650 2000
+Wire Wire Line
+	12150 2400 11700 2400
+Connection ~ 12150 2400
+Wire Wire Line
+	13500 2000 13400 2000
+$Comp
+L Device:R R2
+U 1 1 615A70FD
+P 12150 4550
+F 0 "R2" H 12220 4596 50  0000 L CNN
+F 1 "100k" H 12220 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 4550 50  0001 C CNN
+F 3 "~" H 12150 4550 50  0001 C CNN
+	1    12150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 615A7B6C
+P 12150 6600
+F 0 "R3" H 12220 6646 50  0000 L CNN
+F 1 "100k" H 12220 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 6600 50  0001 C CNN
+F 3 "~" H 12150 6600 50  0001 C CNN
+	1    12150 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 615A80BE
+P 12150 8650
+F 0 "R4" H 12220 8696 50  0000 L CNN
+F 1 "100k" H 12220 8605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 8650 50  0001 C CNN
+F 3 "~" H 12150 8650 50  0001 C CNN
+	1    12150 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 4700 12150 4800
+Wire Wire Line
+	12150 4800 12650 4800
+Wire Wire Line
+	12650 4800 12650 4500
+Wire Wire Line
+	12650 4800 12650 4900
+$Comp
+L power:GND #PWR02
+U 1 1 615AAEA2
+P 12650 4900
+F 0 "#PWR02" H 12650 4650 50  0001 C CNN
+F 1 "GND" H 12655 4727 50  0000 C CNN
+F 2 "" H 12650 4900 50  0001 C CNN
+F 3 "" H 12650 4900 50  0001 C CNN
+	1    12650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 4300 12150 4300
+Wire Wire Line
+	12150 4300 12150 4400
+Wire Wire Line
+	12150 4300 11650 4300
+Connection ~ 12150 4300
+Wire Wire Line
+	12650 3900 12650 4000
+Wire Wire Line
+	12650 3900 12750 3900
+Wire Wire Line
+	12750 3900 12750 3800
+Wire Wire Line
+	12650 3800 12650 3900
+Connection ~ 12650 3900
+Wire Wire Line
+	13500 3900 13400 3900
+Wire Wire Line
+	13500 4000 12650 4000
+Connection ~ 12650 4000
+Wire Wire Line
+	12650 4000 12650 4100
+Wire Wire Line
+	12350 6350 12150 6350
+Wire Wire Line
+	12150 6350 12150 6450
+Wire Wire Line
+	12150 6350 11650 6350
+Connection ~ 12150 6350
+Wire Wire Line
+	12150 6750 12150 6850
+Wire Wire Line
+	12150 6850 12650 6850
+Wire Wire Line
+	12650 6850 12650 6550
+Wire Wire Line
+	12650 6850 12650 6950
+Connection ~ 12650 6850
+$Comp
+L power:GND #PWR03
+U 1 1 615B1475
+P 12650 6950
+F 0 "#PWR03" H 12650 6700 50  0001 C CNN
+F 1 "GND" H 12655 6777 50  0000 C CNN
+F 2 "" H 12650 6950 50  0001 C CNN
+F 3 "" H 12650 6950 50  0001 C CNN
+	1    12650 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 5850 12750 5950
+Wire Wire Line
+	12750 5950 12650 5950
+Wire Wire Line
+	12650 5950 12650 6050
+Wire Wire Line
+	12650 5950 12650 5850
+Connection ~ 12650 5950
+Wire Wire Line
+	12650 6050 13500 6050
+Connection ~ 12650 6050
+Wire Wire Line
+	12650 6050 12650 6150
+Connection ~ 12650 4800
+Wire Wire Line
+	12350 8400 12150 8400
+Wire Wire Line
+	12150 8400 12150 8500
+Wire Wire Line
+	12150 8800 12150 8900
+Wire Wire Line
+	12150 8900 12650 8900
+Wire Wire Line
+	12650 8900 12650 8600
+Wire Wire Line
+	12650 8900 12650 9000
+Connection ~ 12650 8900
+$Comp
+L power:GND #PWR04
+U 1 1 615CDC14
+P 12650 9000
+F 0 "#PWR04" H 12650 8750 50  0001 C CNN
+F 1 "GND" H 12655 8827 50  0000 C CNN
+F 2 "" H 12650 9000 50  0001 C CNN
+F 3 "" H 12650 9000 50  0001 C CNN
+	1    12650 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 8400 11500 8400
+Connection ~ 12150 8400
+Wire Wire Line
+	12750 7900 12750 8000
+Wire Wire Line
+	12750 8000 12650 8000
+Wire Wire Line
+	12650 8000 12650 8100
+Wire Wire Line
+	12650 8000 12650 7900
+Connection ~ 12650 8000
+Wire Wire Line
+	13500 8100 12650 8100
+Connection ~ 12650 8100
+Wire Wire Line
+	12650 8100 12650 8200
+Wire Wire Line
+	13500 8000 13400 8000
+Wire Wire Line
+	13400 8000 13400 7900
+$Comp
+L power:+5V #PWR09
+U 1 1 615EA409
+P 13400 7900
+F 0 "#PWR09" H 13400 7750 50  0001 C CNN
+F 1 "+5V" H 13415 8073 50  0000 C CNN
+F 2 "" H 13400 7900 50  0001 C CNN
+F 3 "" H 13400 7900 50  0001 C CNN
+	1    13400 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 5950 13400 5950
+Wire Wire Line
+	13400 5950 13400 5850
+$Comp
+L power:+5V #PWR08
+U 1 1 615EB90F
+P 13400 5850
+F 0 "#PWR08" H 13400 5700 50  0001 C CNN
+F 1 "+5V" H 13415 6023 50  0000 C CNN
+F 2 "" H 13400 5850 50  0001 C CNN
+F 3 "" H 13400 5850 50  0001 C CNN
+	1    13400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 3900 13400 3800
+$Comp
+L power:+5V #PWR07
+U 1 1 615ECE4A
+P 13400 3800
+F 0 "#PWR07" H 13400 3650 50  0001 C CNN
+F 1 "+5V" H 13415 3973 50  0000 C CNN
+F 2 "" H 13400 3800 50  0001 C CNN
+F 3 "" H 13400 3800 50  0001 C CNN
+	1    13400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 2000 13400 1900
+Wire Wire Line
+	12650 2000 12650 2100
+Wire Wire Line
+	12650 2100 13500 2100
+Connection ~ 12650 2100
+Wire Wire Line
+	12650 2100 12650 2200
+$Comp
+L power:+5V #PWR06
+U 1 1 615EFF91
+P 13400 1900
+F 0 "#PWR06" H 13400 1750 50  0001 C CNN
+F 1 "+5V" H 13415 2073 50  0000 C CNN
+F 2 "" H 13400 1900 50  0001 C CNN
+F 3 "" H 13400 1900 50  0001 C CNN
+	1    13400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 3450 12650 3350
+Wire Wire Line
+	12650 3350 12050 3350
+Wire Wire Line
+	12050 3350 12050 1450
+Wire Wire Line
+	12650 1550 12650 1450
+Wire Wire Line
+	12650 1450 12050 1450
+Wire Wire Line
+	12650 5500 12650 5400
+Wire Wire Line
+	12650 7550 12650 7450
+Wire Wire Line
+	12650 7450 12050 7450
+Wire Wire Line
+	12050 7450 12050 5400
+Connection ~ 12050 5400
+Wire Wire Line
+	12050 5400 12650 5400
+Wire Wire Line
+	12050 3350 12050 5400
+Connection ~ 12050 3350
+Wire Wire Line
+	12650 1450 12650 1350
+Connection ~ 12650 1450
+$Comp
+L power:+5V #PWR05
+U 1 1 616041C9
+P 12650 950
+F 0 "#PWR05" H 12650 800 50  0001 C CNN
+F 1 "+5V" H 12665 1123 50  0000 C CNN
+F 2 "" H 12650 950 50  0001 C CNN
+F 3 "" H 12650 950 50  0001 C CNN
+	1    12650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 950  12650 1050
 $EndSCHEMATC
