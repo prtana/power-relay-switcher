@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32L0:STM32L052K6Tx U?
-U 1 1 6163630E
-P 4300 2550
-AR Path="/6163630E" Ref="U?"  Part="1" 
-AR Path="/616295F8/6163630E" Ref="U?"  Part="1" 
-AR Path="/6168966F/6163630E" Ref="U2"  Part="1" 
-F 0 "U2" H 4250 2550 50  0000 C CNN
-F 1 "STM32L052K6Tx" H 4200 2450 50  0000 C CNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3800 1650 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108217.pdf" H 4300 2550 50  0001 C CNN
-	1    4300 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 1650 4200 1550
 Wire Wire Line
@@ -790,4 +776,15 @@ Wire Wire Line
 	2950 3250 3700 3250
 Wire Wire Line
 	3700 3350 2950 3350
+$Comp
+L MCU_ST_STM32L0:STM32L062K8Tx U2
+U 1 1 6167B63A
+P 4300 2550
+F 0 "U2" H 4300 2550 50  0000 C CNN
+F 1 "STM32L062K8Tx" H 4200 2450 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3800 1650 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108218.pdf" H 4300 2550 50  0001 C CNN
+	1    4300 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
