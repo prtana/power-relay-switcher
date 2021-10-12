@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 2
 Title "PRS Relay Board"
-Date "2021-10-05"
+Date "2021-10-11"
 Rev "1.0"
 Comp "Deeply Embedded OÜ"
 Comment1 "Designed by: Priit Tänav"

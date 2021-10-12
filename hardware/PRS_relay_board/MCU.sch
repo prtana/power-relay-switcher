@@ -2611,24 +2611,6 @@ Wire Wire Line
 	9850 3500 11050 3500
 Wire Wire Line
 	9850 3600 11050 3600
-Wire Wire Line
-	8750 4000 8500 4000
-$Comp
-L Device:R R?
-U 1 1 621F7B99
-P 8350 4000
-AR Path="/621F7B99" Ref="R?"  Part="1" 
-AR Path="/616295F8/621F7B99" Ref="R?"  Part="1" 
-AR Path="/6168966F/621F7B99" Ref="R39"  Part="1" 
-F 0 "R39" V 8300 3750 50  0000 C CNN
-F 1 "100R" V 8300 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8280 4000 50  0001 C CNN
-F 3 "~" H 8350 4000 50  0001 C CNN
-	1    8350 4000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8200 4000 7550 4000
 Text Label 7550 4000 0    50   ~ 0
 FAN_CTRL
 Wire Wire Line
@@ -2736,4 +2718,6 @@ Wire Wire Line
 NoConn ~ 8750 3500
 NoConn ~ 8750 3600
 NoConn ~ 9850 4400
+Wire Wire Line
+	7550 4000 8750 4000
 $EndSCHEMATC
