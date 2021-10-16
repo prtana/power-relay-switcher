@@ -911,7 +911,7 @@ AR Path="/6168966F/6178B815" Ref="S?"  Part="1"
 AR Path="/61751890/6178B815" Ref="S1"  Part="1" 
 F 0 "S1" H 3350 2765 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 3350 2674 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 3700 2600 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 3700 2600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 3700 2500 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 3700 2400 50  0001 L CNN "Description"
 F 5 "12.7" H 3700 2300 50  0001 L CNN "Height"
@@ -932,7 +932,7 @@ AR Path="/6168966F/6178B823" Ref="S?"  Part="1"
 AR Path="/61751890/6178B823" Ref="S2"  Part="1" 
 F 0 "S2" H 3350 4365 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 3350 4274 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 3700 4200 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 3700 4200 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 3700 4100 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 3700 4000 50  0001 L CNN "Description"
 F 5 "12.7" H 3700 3900 50  0001 L CNN "Height"
@@ -953,7 +953,7 @@ AR Path="/6168966F/6178B831" Ref="S?"  Part="1"
 AR Path="/61751890/6178B831" Ref="S3"  Part="1" 
 F 0 "S3" H 6650 2765 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 6650 2674 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 7000 2600 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 7000 2600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 7000 2500 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 7000 2400 50  0001 L CNN "Description"
 F 5 "12.7" H 7000 2300 50  0001 L CNN "Height"
@@ -974,7 +974,7 @@ AR Path="/6168966F/6178B83F" Ref="S?"  Part="1"
 AR Path="/61751890/6178B83F" Ref="S4"  Part="1" 
 F 0 "S4" H 6650 4365 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 6650 4274 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 7000 4200 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 7000 4200 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 7000 4100 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 7000 4000 50  0001 L CNN "Description"
 F 5 "12.7" H 7000 3900 50  0001 L CNN "Height"
@@ -995,7 +995,7 @@ AR Path="/6168966F/6178B84D" Ref="S?"  Part="1"
 AR Path="/61751890/6178B84D" Ref="S5"  Part="1" 
 F 0 "S5" H 9800 2765 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 9800 2674 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 10150 2600 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 10150 2600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 10150 2500 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 10150 2400 50  0001 L CNN "Description"
 F 5 "12.7" H 10150 2300 50  0001 L CNN "Height"
@@ -1016,7 +1016,7 @@ AR Path="/6168966F/6178B85B" Ref="S?"  Part="1"
 AR Path="/61751890/6178B85B" Ref="S6"  Part="1" 
 F 0 "S6" H 9800 4365 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 9800 4274 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 10150 4200 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 10150 4200 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 10150 4100 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 10150 4000 50  0001 L CNN "Description"
 F 5 "12.7" H 10150 3900 50  0001 L CNN "Height"
@@ -1037,7 +1037,7 @@ AR Path="/6168966F/6178B869" Ref="S?"  Part="1"
 AR Path="/61751890/6178B869" Ref="S8"  Part="1" 
 F 0 "S8" H 13000 4365 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 13000 4274 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 13350 4200 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 13350 4200 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 13350 4100 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 13350 4000 50  0001 L CNN "Description"
 F 5 "12.7" H 13350 3900 50  0001 L CNN "Height"
@@ -1058,7 +1058,7 @@ AR Path="/6168966F/6178B877" Ref="S?"  Part="1"
 AR Path="/61751890/6178B877" Ref="S7"  Part="1" 
 F 0 "S7" H 13000 2765 50  0000 C CNN
 F 1 "100SP1T2B4M7RE" H 13000 2674 50  0000 C CNN
-F 2 "100SP1T2B4M7RE" H 13350 2600 50  0001 L CNN
+F 2 "100SP1T2B4M7RE:100SP1T2B4M7RE" H 13350 2600 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/140/100-1079940.pdf" H 13350 2500 50  0001 L CNN
 F 4 "SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC; Switch Operation:On-On; Contact Configuration:SPDT; Illumination:Non Illuminated; Product Range:-; Contact Current Max:5A; Switch Mounting:Through Hole; Contact Voltage AC Nom:120V RoHS Compliant: Yes" H 13350 2400 50  0001 L CNN "Description"
 F 5 "12.7" H 13350 2300 50  0001 L CNN "Height"
@@ -1361,7 +1361,7 @@ AR Path="/6168966F/617CBC88" Ref="IC?"  Part="1"
 AR Path="/61751890/617CBC88" Ref="U3"  Part="1" 
 F 0 "U3" H 4150 8015 50  0000 C CNN
 F 1 "74LVC125AD,118" H 4150 7924 50  0000 C CNN
-F 2 "SOIC127P600X175-14N" H 4550 7850 50  0001 L CNN
+F 2 "74LVC125AD,118:SOIC127P600X175-14N" H 4550 7850 50  0001 L CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf" H 4550 7750 50  0001 L CNN
 F 4 "74LVC125A - Quad buffer/line driver with 5 V tolerant input/outputs; 3-state@en-us" H 4550 7650 50  0001 L CNN "Description"
 F 5 "1.75" H 4550 7550 50  0001 L CNN "Height"
@@ -1382,7 +1382,7 @@ AR Path="/6168966F/617CBC96" Ref="LED?"  Part="1"
 AR Path="/61751890/617CBC96" Ref="LED1"  Part="1" 
 F 0 "LED1" H 7550 7485 50  0000 C CNN
 F 1 "553-0122F" H 7550 7576 50  0000 C CNN
-F 2 "5530122F" H 7900 7950 50  0001 L CNN
+F 2 "553-0122:5530122F" H 7900 7950 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/553-0122F.pdf" H 7900 7850 50  0001 L CNN
 F 4 "Dialight 553-0122F, Green Right Angle PCB LED Indicator, 2 LEDs 3mm (T-1), Through Hole" H 7900 7750 50  0001 L CNN "Description"
 F 5 "9.65" H 7900 7650 50  0001 L CNN "Height"
@@ -1403,7 +1403,7 @@ AR Path="/6168966F/617CBCA4" Ref="LED?"  Part="1"
 AR Path="/61751890/617CBCA4" Ref="LED2"  Part="1" 
 F 0 "LED2" H 11650 7485 50  0000 C CNN
 F 1 "553-0122F" H 11650 7576 50  0000 C CNN
-F 2 "5530122F" H 12000 7950 50  0001 L CNN
+F 2 "553-0122:5530122F" H 12000 7950 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/553-0122F.pdf" H 12000 7850 50  0001 L CNN
 F 4 "Dialight 553-0122F, Green Right Angle PCB LED Indicator, 2 LEDs 3mm (T-1), Through Hole" H 12000 7750 50  0001 L CNN "Description"
 F 5 "9.65" H 12000 7650 50  0001 L CNN "Height"
@@ -1424,7 +1424,7 @@ AR Path="/6168966F/617CBCB2" Ref="LED?"  Part="1"
 AR Path="/61751890/617CBCB2" Ref="LED3"  Part="1" 
 F 0 "LED3" H 9400 8435 50  0000 C CNN
 F 1 "553-0122F" H 9400 8526 50  0000 C CNN
-F 2 "5530122F" H 9750 8900 50  0001 L CNN
+F 2 "553-0122:5530122F" H 9750 8900 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/553-0122F.pdf" H 9750 8800 50  0001 L CNN
 F 4 "Dialight 553-0122F, Green Right Angle PCB LED Indicator, 2 LEDs 3mm (T-1), Through Hole" H 9750 8700 50  0001 L CNN "Description"
 F 5 "9.65" H 9750 8600 50  0001 L CNN "Height"
@@ -1445,7 +1445,7 @@ AR Path="/6168966F/617CBCC0" Ref="LED?"  Part="1"
 AR Path="/61751890/617CBCC0" Ref="LED4"  Part="1" 
 F 0 "LED4" H 13950 8535 50  0000 C CNN
 F 1 "553-0122F" H 13950 8626 50  0000 C CNN
-F 2 "5530122F" H 14300 9000 50  0001 L CNN
+F 2 "553-0122:5530122F" H 14300 9000 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/553-0122F.pdf" H 14300 8900 50  0001 L CNN
 F 4 "Dialight 553-0122F, Green Right Angle PCB LED Indicator, 2 LEDs 3mm (T-1), Through Hole" H 14300 8800 50  0001 L CNN "Description"
 F 5 "9.65" H 14300 8700 50  0001 L CNN "Height"

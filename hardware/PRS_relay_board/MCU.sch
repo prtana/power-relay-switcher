@@ -625,7 +625,7 @@ U 1 1 619042AF
 P 8450 5100
 F 0 "J4" H 8900 5365 50  0000 C CNN
 F 1 "FTSH-105-01-F-DV-K-P" H 8900 5274 50  0000 C CNN
-F 2 "FTSH-105-XX-YYY-DV-K-P" H 9200 5200 50  0001 L CNN
+F 2 "FTSH-105-01-F-DV-K:FTSH-105-XX-YYY-DV-K-P" H 9200 5200 50  0001 L CNN
 F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" H 9200 5100 50  0001 L CNN
 F 4 "10 Position, High Reliability Header Strips, 0.050&quot; pitch" H 9200 5000 50  0001 L CNN "Description"
 F 5 "" H 9200 4900 50  0001 L CNN "Height"
@@ -653,27 +653,12 @@ Wire Wire Line
 Wire Wire Line
 	4800 3250 6000 3250
 $Comp
-L UJ2-BH-2-TH:UJ2-BH-2-TH J3
-U 1 1 61631E24
-P 2350 5750
-F 0 "J3" H 2457 6217 50  0000 C CNN
-F 1 "UJ2-BH-2-TH" H 2457 6126 50  0000 C CNN
-F 2 "CUI_UJ2-BH-2-TH" H 2350 5750 50  0001 L BNN
-F 3 "" H 2350 5750 50  0001 L BNN
-F 4 "CUI INC" H 2350 5750 50  0001 L BNN "MANUFACTURER"
-F 5 "MANUFACTURER RECOMENDATION" H 2350 5750 50  0001 L BNN "STANDARD"
-F 6 "1.0" H 2350 5750 50  0001 L BNN "PART_REV"
-	1    2350 5750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2750 6050
-$Comp
 L USBLC6-2SC6:USBLC6-2SC6 U4
 U 1 1 6167679A
 P 3550 5650
 F 0 "U4" H 4200 5915 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 4200 5824 50  0000 C CNN
-F 2 "SOT95P280X145-6N" H 4700 5750 50  0001 L CNN
+F 2 "USBLC6-4SC6:SOT95P280X145-6N" H 4700 5750 50  0001 L CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00050750.pdf" H 4700 5650 50  0001 L CNN
 F 4 "TVS Diode Array Uni-Directional USBLC6-2SC6 17V, SOT-23 6-Pin" H 4700 5550 50  0001 L CNN "Description"
 F 5 "1.45" H 4700 5450 50  0001 L CNN "Height"
@@ -708,15 +693,15 @@ USB_D+
 NoConn ~ 3700 2450
 NoConn ~ 3700 2550
 NoConn ~ 4800 3350
-Text HLabel 5550 1850 2    50   Input ~ 0
+Text HLabel 5550 1950 2    50   Input ~ 0
 RELAY1_IN
 Wire Wire Line
-	5550 1850 4800 1850
-Text HLabel 5550 2050 2    50   Input ~ 0
+	5550 1950 4800 1950
+Text HLabel 5550 2150 2    50   Input ~ 0
 RELAY2_IN
-Text HLabel 5550 2250 2    50   Input ~ 0
+Text HLabel 5550 2350 2    50   Input ~ 0
 RELAY3_IN
-Text HLabel 5550 2450 2    50   Input ~ 0
+Text HLabel 5550 2550 2    50   Input ~ 0
 RELAY4_IN
 Wire Wire Line
 	5550 2050 4800 2050
@@ -724,33 +709,33 @@ Wire Wire Line
 	4800 2250 5550 2250
 Wire Wire Line
 	5550 2450 4800 2450
-Text HLabel 5550 1950 2    50   Input ~ 0
+Text HLabel 5550 1850 2    50   Input ~ 0
 RELAY1_USB_MAN
-Text HLabel 5550 2150 2    50   Input ~ 0
+Text HLabel 5550 2050 2    50   Input ~ 0
 RELAY2_USB_MAN
-Text HLabel 5550 2350 2    50   Input ~ 0
+Text HLabel 5550 2250 2    50   Input ~ 0
 RELAY3_USB_MAN
-Text HLabel 5550 2550 2    50   Input ~ 0
+Text HLabel 5550 2450 2    50   Input ~ 0
 RELAY4_USB_MAN
 Wire Wire Line
-	5550 1950 4800 1950
+	5550 1850 4800 1850
 Wire Wire Line
 	4800 2150 5550 2150
 Wire Wire Line
 	5550 2350 4800 2350
 Wire Wire Line
 	4800 2550 5550 2550
-Text HLabel 2950 2750 0    50   Output ~ 0
+Text HLabel 5550 2650 2    50   Output ~ 0
 RELAY1_OUT
-Text HLabel 2950 2850 0    50   Output ~ 0
+Text HLabel 5550 2750 2    50   Output ~ 0
 RELAY2_OUT
 Wire Wire Line
 	3150 2750 2950 2750
 Wire Wire Line
 	2950 2850 3150 2850
-Text HLabel 5550 2650 2    50   Output ~ 0
+Text HLabel 2950 2850 0    50   Output ~ 0
 RELAY3_OUT
-Text HLabel 5550 2750 2    50   Output ~ 0
+Text HLabel 2950 2750 0    50   Output ~ 0
 RELAY4_OUT
 Wire Wire Line
 	5550 2650 5350 2650
@@ -785,6 +770,22 @@ F 1 "STM32L062K8Tx" H 4200 2450 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3800 1650 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108218.pdf" H 4300 2550 50  0001 C CNN
 	1    4300 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 5500 0    50   ~ 0
+90 Ohm USB differential pair:\ntrace width 10.28 mil [26.11 um]\ntrace spacing : 8.00 mil [20.32 um]\ntrace thickness: 1.4 mil [35.56 um]\nrelative dielectric constant: 4.6\ndielectric thickness: 7.1 mil [180.34 um]
+$Comp
+L UJ2-BH-2-TH:UJ2-BH-2-TH J3
+U 1 1 61631E24
+P 2350 5750
+F 0 "J3" H 2457 6217 50  0000 C CNN
+F 1 "UJ2-BH-2-TH" H 2457 6126 50  0000 C CNN
+F 2 "UJ2-BH-2-TH:CUI_UJ2-BH-2-TH" H 2350 5750 50  0001 L BNN
+F 3 "" H 2350 5750 50  0001 L BNN
+F 4 "CUI INC" H 2350 5750 50  0001 L BNN "MANUFACTURER"
+F 5 "MANUFACTURER RECOMENDATION" H 2350 5750 50  0001 L BNN "STANDARD"
+F 6 "1.0" H 2350 5750 50  0001 L BNN "PART_REV"
+	1    2350 5750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

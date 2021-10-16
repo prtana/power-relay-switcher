@@ -81,7 +81,7 @@ AR Path="/61A127C0" Ref="J?"  Part="1"
 AR Path="/61A0E05C/61A127C0" Ref="J5"  Part="1" 
 F 0 "J5" H 3192 3365 50  0000 C CNN
 F 1 "10-32-1031" H 3192 3274 50  0000 C CNN
-F 2 "SHDR3W114P0X508_1X3_1416X1140X1425P" H 3550 3200 50  0001 L CNN
+F 2 "10-32-1031:SHDR3W114P0X508_1X3_1416X1140X1425P" H 3550 3200 50  0001 L CNN
 F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us//0010321031_PCB_HEADERS.pdf" H 3550 3100 50  0001 L CNN
 F 4 "Molex SPOX 5281, 5.08mm Pitch, 3 Way, 1 Row, Straight PCB Header, Through Hole" H 3550 3000 50  0001 L CNN "Description"
 F 5 "14.25" H 3550 2900 50  0001 L CNN "Height"
@@ -215,7 +215,7 @@ AR Path="/6168966F/61A1B842" Ref="IC?"  Part="1"
 AR Path="/61A0E05C/61A1B842" Ref="U5"  Part="1" 
 F 0 "U5" H 8500 3515 50  0000 C CNN
 F 1 "UA78M33CKVURG3" H 8500 3424 50  0000 C CNN
-F 2 "TPS7A6533QKVURQ1" H 8850 3350 50  0001 L CNN
+F 2 "UA78M33CKVURG3:TPS7A6533QKVURQ1" H 8850 3350 50  0001 L CNN
 F 3 "https://www.ti.com/lit/gpn/ua78m?HQS=ti-null-null-sf-df-pf-sep-wwe&DCM=yes" H 8850 3250 50  0001 L CNN
 F 4 "Linear Voltage Regulators 3.3 V 500mA Fix Pos Voltage Regulator" H 8850 3150 50  0001 L CNN "Description"
 F 5 "2.52" H 8850 3050 50  0001 L CNN "Height"
@@ -255,4 +255,8 @@ $EndComp
 Wire Wire Line
 	7150 3250 7150 3150
 Connection ~ 7150 3250
+Text Label 2900 3100 0    50   ~ 0
+N
+Text Label 2900 3300 0    50   ~ 0
+L
 $EndSCHEMATC

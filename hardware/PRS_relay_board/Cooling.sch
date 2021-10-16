@@ -162,77 +162,17 @@ Connection ~ 8450 2550
 Connection ~ 8350 2550
 Wire Wire Line
 	8350 2550 8350 2650
-$Comp
-L Device:R R?
-U 1 1 619417DA
-P 9400 2800
-AR Path="/619417DA" Ref="R?"  Part="1" 
-AR Path="/61931D61/619417DA" Ref="R42"  Part="1" 
-F 0 "R42" H 9470 2846 50  0000 L CNN
-F 1 "R" H 9470 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9330 2800 50  0001 C CNN
-F 3 "~" H 9400 2800 50  0001 C CNN
-	1    9400 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 619417E0
-P 9400 3300
-AR Path="/619417E0" Ref="R?"  Part="1" 
-AR Path="/61931D61/619417E0" Ref="R43"  Part="1" 
-F 0 "R43" H 9470 3346 50  0000 L CNN
-F 1 "R" H 9470 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9330 3300 50  0001 C CNN
-F 3 "~" H 9400 3300 50  0001 C CNN
-	1    9400 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 619417E6
-P 9400 3550
-AR Path="/619417E6" Ref="#PWR?"  Part="1" 
-AR Path="/61931D61/619417E6" Ref="#PWR075"  Part="1" 
-F 0 "#PWR075" H 9400 3300 50  0001 C CNN
-F 1 "GND" H 9405 3377 50  0000 C CNN
-F 2 "" H 9400 3550 50  0001 C CNN
-F 3 "" H 9400 3550 50  0001 C CNN
-	1    9400 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9400 3450 9400 3550
-Wire Wire Line
-	9400 2350 9800 2350
+	9400 2450 9800 2450
 Wire Wire Line
 	8450 2550 9800 2550
 Connection ~ 8350 2000
 Wire Wire Line
-	9800 2450 9400 2450
-Wire Wire Line
-	9400 2450 9400 2650
-Wire Wire Line
 	8350 2000 9400 2000
-Wire Wire Line
-	9400 2000 9400 2350
 Wire Wire Line
 	8350 2000 8350 2100
 Wire Wire Line
 	7350 2000 7350 2250
-$Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 619417FB
-P 10000 2450
-AR Path="/619417FB" Ref="J?"  Part="1" 
-AR Path="/61931D61/619417FB" Ref="J6"  Part="1" 
-F 0 "J6" H 9972 2474 50  0000 R CNN
-F 1 "B3B-XH-A" H 9972 2383 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 10000 2450 50  0001 C CNN
-F 3 "~" H 10000 2450 50  0001 C CNN
-	1    10000 2450
-	-1   0    0    -1  
-$EndComp
 Text Notes 8250 1550 0    100  ~ 20
 FAN
 $Comp
@@ -243,7 +183,7 @@ AR Path="/6168966F/6194180A" Ref="IC?"  Part="1"
 AR Path="/61931D61/6194180A" Ref="U1"  Part="1" 
 F 0 "U1" H 3550 2815 50  0000 C CNN
 F 1 "STCN75" H 3550 2724 50  0000 C CNN
-F 2 "SOP65P490X110-8N" H 4000 2650 50  0001 L CNN
+F 2 "STCN75:SOP65P490X110-8N" H 4000 2650 50  0001 L CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/b1/27/38/ef/f4/62/47/37/CD00153589.pdf/files/CD00153589.pdf/jcr:content/translations/en.CD00153589.pdf" H 4000 2550 50  0001 L CNN
 F 4 "Temperature Sensor Digital, Local -55C ~ 125C 8 b 8-MSOP" H 4000 2450 50  0001 L CNN "Description"
 F 5 "1.1" H 4000 2350 50  0001 L CNN "Height"
@@ -485,13 +425,73 @@ Text HLabel 6550 3150 0    50   Input ~ 0
 FAN_CTRL
 Wire Wire Line
 	6550 3150 6650 3150
-Wire Wire Line
-	9400 2950 9400 3050
-Wire Wire Line
-	9400 3050 9500 3050
-Connection ~ 9400 3050
-Wire Wire Line
-	9400 3050 9400 3150
-Text HLabel 9500 3050 2    50   Output ~ 0
+Text HLabel 9600 3050 2    50   Output ~ 0
 FAN_TACH
+Wire Wire Line
+	9500 3050 9500 3150
+Connection ~ 9500 3050
+Wire Wire Line
+	9500 3050 9600 3050
+Wire Wire Line
+	9500 2950 9500 3050
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 619417FB
+P 10000 2450
+AR Path="/619417FB" Ref="J?"  Part="1" 
+AR Path="/61931D61/619417FB" Ref="J6"  Part="1" 
+F 0 "J6" H 9972 2474 50  0000 R CNN
+F 1 "B3B-XH-A" H 9972 2383 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 10000 2450 50  0001 C CNN
+F 3 "~" H 10000 2450 50  0001 C CNN
+	1    10000 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3450 9500 3550
+$Comp
+L power:GND #PWR?
+U 1 1 619417E6
+P 9500 3550
+AR Path="/619417E6" Ref="#PWR?"  Part="1" 
+AR Path="/61931D61/619417E6" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 9500 3300 50  0001 C CNN
+F 1 "GND" H 9505 3377 50  0000 C CNN
+F 2 "" H 9500 3550 50  0001 C CNN
+F 3 "" H 9500 3550 50  0001 C CNN
+	1    9500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619417E0
+P 9500 3300
+AR Path="/619417E0" Ref="R?"  Part="1" 
+AR Path="/61931D61/619417E0" Ref="R43"  Part="1" 
+F 0 "R43" H 9570 3346 50  0000 L CNN
+F 1 "R" H 9570 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9430 3300 50  0001 C CNN
+F 3 "~" H 9500 3300 50  0001 C CNN
+	1    9500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619417DA
+P 9500 2800
+AR Path="/619417DA" Ref="R?"  Part="1" 
+AR Path="/61931D61/619417DA" Ref="R42"  Part="1" 
+F 0 "R42" H 9570 2846 50  0000 L CNN
+F 1 "R" H 9570 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9430 2800 50  0001 C CNN
+F 3 "~" H 9500 2800 50  0001 C CNN
+	1    9500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2000 9400 2450
+Wire Wire Line
+	9800 2350 9500 2350
+Wire Wire Line
+	9500 2350 9500 2650
 $EndSCHEMATC
