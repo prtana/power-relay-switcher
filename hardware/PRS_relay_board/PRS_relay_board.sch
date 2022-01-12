@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 61647B61
-P 11000 10150
-F 0 "H1" H 11100 10196 50  0000 L CNN
-F 1 "MountingHole" H 11100 10105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 11000 10150 50  0001 C CNN
-F 3 "~" H 11000 10150 50  0001 C CNN
-	1    11000 10150
+P 6150 6750
+F 0 "H1" H 6250 6796 50  0000 L CNN
+F 1 "MountingHole" H 6250 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 6750 50  0001 C CNN
+F 3 "~" H 6150 6750 50  0001 C CNN
+	1    6150 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 61647FB9
-P 11000 10400
-F 0 "H2" H 11100 10446 50  0000 L CNN
-F 1 "MountingHole" H 11100 10355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 11000 10400 50  0001 C CNN
-F 3 "~" H 11000 10400 50  0001 C CNN
-	1    11000 10400
+P 6150 7000
+F 0 "H2" H 6250 7046 50  0000 L CNN
+F 1 "MountingHole" H 6250 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 7000 50  0001 C CNN
+F 3 "~" H 6150 7000 50  0001 C CNN
+	1    6150 7000
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -61,23 +61,23 @@ $EndSheet
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 617C007A
-P 11000 10650
-F 0 "H3" H 11100 10696 50  0000 L CNN
-F 1 "MountingHole" H 11100 10605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 11000 10650 50  0001 C CNN
-F 3 "~" H 11000 10650 50  0001 C CNN
-	1    11000 10650
+P 6150 7250
+F 0 "H3" H 6250 7296 50  0000 L CNN
+F 1 "MountingHole" H 6250 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 7250 50  0001 C CNN
+F 3 "~" H 6150 7250 50  0001 C CNN
+	1    6150 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 617C0080
-P 11000 10900
-F 0 "H4" H 11100 10946 50  0000 L CNN
-F 1 "MountingHole" H 11100 10855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 11000 10900 50  0001 C CNN
-F 3 "~" H 11000 10900 50  0001 C CNN
-	1    11000 10900
+P 6150 7500
+F 0 "H4" H 6250 7546 50  0000 L CNN
+F 1 "MountingHole" H 6250 7455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 6150 7500 50  0001 C CNN
+F 3 "~" H 6150 7500 50  0001 C CNN
+	1    6150 7500
 	1    0    0    -1  
 $EndComp
 $Sheet

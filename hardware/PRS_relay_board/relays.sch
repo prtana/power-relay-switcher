@@ -409,38 +409,22 @@ F 11 "" H 10450 3600 50  0001 L CNN "Arrow Price/Stock"
 	1    9800 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2150 5600 2150
-Wire Wire Line
-	5050 2350 5600 2350
-Text Label 5600 2150 2    50   ~ 0
+Text Label 6000 2150 2    50   ~ 0
 RELAY1_COM
-Text Label 5600 2350 2    50   ~ 0
+Text Label 6000 2650 2    50   ~ 0
 RELAY1_NO
-Text Label 8950 2150 2    50   ~ 0
+Text Label 9500 2150 2    50   ~ 0
 RELAY2_COM
-Text Label 8950 2350 2    50   ~ 0
+Text Label 9500 2650 2    50   ~ 0
 RELAY2_NO
-Text Label 3400 4200 2    50   ~ 0
+Text Label 3750 4200 2    50   ~ 0
 RELAY3_COM
-Text Label 3400 4400 2    50   ~ 0
+Text Label 3750 4700 2    50   ~ 0
 RELAY3_NO
-Text Label 7100 4300 2    50   ~ 0
+Text Label 7450 4300 2    50   ~ 0
 RELAY4_COM
-Text Label 7100 4500 2    50   ~ 0
+Text Label 7450 4800 2    50   ~ 0
 RELAY4_NO
-Wire Wire Line
-	2850 4200 3400 4200
-Wire Wire Line
-	2850 4400 3400 4400
-Wire Wire Line
-	6550 4300 7100 4300
-Wire Wire Line
-	6550 4500 7100 4500
-Wire Wire Line
-	8400 2150 8950 2150
-Wire Wire Line
-	8400 2350 8950 2350
 Wire Wire Line
 	9800 3600 9250 3600
 Wire Wire Line
@@ -681,4 +665,120 @@ Wire Wire Line
 	1950 4100 2050 4100
 Wire Wire Line
 	1950 4400 2050 4400
+$Comp
+L Device:Varistor RV1
+U 1 1 619EE024
+P 5300 2400
+F 0 "RV1" H 5403 2446 50  0000 L CNN
+F 1 "ERZE11A431" H 5403 2355 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W6.3mm_P7.5mm" V 5230 2400 50  0001 C CNN
+F 3 "~" H 5300 2400 50  0001 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2150 5300 2150
+Wire Wire Line
+	5300 2250 5300 2150
+Connection ~ 5300 2150
+Wire Wire Line
+	5300 2150 6000 2150
+Wire Wire Line
+	5150 2650 5150 2350
+Wire Wire Line
+	5150 2350 5050 2350
+Wire Wire Line
+	5150 2650 5300 2650
+Wire Wire Line
+	5300 2550 5300 2650
+Connection ~ 5300 2650
+Wire Wire Line
+	5300 2650 6000 2650
+$Comp
+L Device:Varistor RV4
+U 1 1 61A03DE0
+P 6800 4550
+F 0 "RV4" H 6903 4596 50  0000 L CNN
+F 1 "ERZE11A431" H 6903 4505 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W6.3mm_P7.5mm" V 6730 4550 50  0001 C CNN
+F 3 "~" H 6800 4550 50  0001 C CNN
+	1    6800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV2
+U 1 1 61A06F25
+P 8650 2400
+F 0 "RV2" H 8753 2446 50  0000 L CNN
+F 1 "ERZE11A431" H 8753 2355 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W6.3mm_P7.5mm" V 8580 2400 50  0001 C CNN
+F 3 "~" H 8650 2400 50  0001 C CNN
+	1    8650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV3
+U 1 1 61A09F7E
+P 3100 4450
+F 0 "RV3" H 3203 4496 50  0000 L CNN
+F 1 "ERZE11A431" H 3203 4405 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W6.3mm_P7.5mm" V 3030 4450 50  0001 C CNN
+F 3 "~" H 3100 4450 50  0001 C CNN
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2350 8500 2350
+Wire Wire Line
+	8500 2350 8500 2650
+Wire Wire Line
+	8500 2650 8650 2650
+Wire Wire Line
+	8650 2650 8650 2550
+Wire Wire Line
+	8650 2150 8400 2150
+Wire Wire Line
+	8650 2250 8650 2150
+Connection ~ 8650 2650
+Wire Wire Line
+	8650 2650 9500 2650
+Wire Wire Line
+	8650 2150 9500 2150
+Connection ~ 8650 2150
+Wire Wire Line
+	2850 4200 3100 4200
+Wire Wire Line
+	3100 4200 3100 4300
+Connection ~ 3100 4200
+Wire Wire Line
+	2850 4400 2950 4400
+Wire Wire Line
+	2950 4400 2950 4700
+Wire Wire Line
+	2950 4700 3100 4700
+Wire Wire Line
+	3100 4700 3100 4600
+Connection ~ 3100 4700
+Wire Wire Line
+	3100 4200 3750 4200
+Wire Wire Line
+	3100 4700 3750 4700
+Wire Wire Line
+	6550 4300 6800 4300
+Wire Wire Line
+	6800 4300 6800 4400
+Connection ~ 6800 4300
+Wire Wire Line
+	6550 4500 6650 4500
+Wire Wire Line
+	6650 4500 6650 4800
+Wire Wire Line
+	6650 4800 6800 4800
+Wire Wire Line
+	6800 4800 6800 4700
+Connection ~ 6800 4800
+Wire Wire Line
+	6800 4300 7450 4300
+Wire Wire Line
+	6800 4800 7450 4800
 $EndSCHEMATC
