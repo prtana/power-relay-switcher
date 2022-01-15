@@ -95,9 +95,37 @@ static void InitRelayStructs (void)
 	relay_4.PinRelayManualUSB = RELAY_4_USB_MAN_Pin;
 }
 
+static void SetRelayInitialPosition (RelayTypedef *relay)
+{
+	SwitchManualUsbState switch_manual_usb_state = ReadSwitchManualUsbState(relay);
+	if (switch_manual_usb_state == SWITCH_USB)
+	{
+		SetRelayState(relay, RELAY_OPEN);
+		return;
+	}
+
+	RelayState relay_switch_state = ReadRelaySwitchState(relay);
+	if (relay_switch_state == RELAY_OPEN)
+	{
+		SetRelayState(relay, RELAY_OPEN);
+	}
+	else if (relay_switch_state == RELAY_CLOSED)
+	{
+		SetRelayState(relay, RELAY_CLOSED);
+	}
+}
+
+static void SetRelaysInitialPositions (void)
+{
+	SetRelayInitialPosition(&relay_1);
+	SetRelayInitialPosition(&relay_2);
+	SetRelayInitialPosition(&relay_3);
+	SetRelayInitialPosition(&relay_4);
+}
+
 void InitRelays (void)
 {
 	InitRelayStructs();
-
+	SetRelaysInitialPositions();
 }
 
