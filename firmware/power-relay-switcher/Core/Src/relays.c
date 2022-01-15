@@ -27,6 +27,23 @@ static RelayState ReadRelaySwitchState (RelayTypedef *relay)
 	return switch_state;
 }
 
+static SwitchManualUsbState ReadSwitchManualUsbState (RelayTypedef *relay)
+{
+	GPIO_PinState switch_pin_state = HAL_GPIO_ReadPin(relay->GPIORelayManualUSB, relay->PinRelayManualUSB);
+
+	SwitchManualUsbState switch_state;
+	if (switch_pin_state == GPIO_PIN_SET)
+	{
+		switch_state = SWITCH_MANUAL;
+	}
+	else
+	{
+		switch_state = SWITCH_USB;
+	}
+
+	return switch_state;
+}
+
 static void SetRelayState (RelayTypedef *relay, RelayState state)
 {
 	if (state == RELAY_OPEN)
