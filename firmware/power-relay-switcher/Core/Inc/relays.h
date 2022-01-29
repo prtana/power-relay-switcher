@@ -8,33 +8,20 @@
 #ifndef INC_RELAYS_H_
 #define INC_RELAYS_H_
 
-typedef enum
-{
-  RELAY_OPEN = 0,
-  RELAY_CLOSED
-} RelayState;
+#include <stdbool.h>
 
 typedef enum
 {
-	SWITCH_MANUAL = 0,
-	SWITCH_USB
-} SwitchManualUsbState;
+	RELAY_CLOSED = 0,
+	RELAY_OPEN
+} RelayState;
 
 typedef struct
 {
-	GPIO_TypeDef *GPIORelayOut;
-	uint32_t PinRelayOut;
-
-	GPIO_TypeDef *GPIORelayIn;
-	uint32_t PinRelayIn;
-
-	GPIO_TypeDef *GPIORelayManualUSB;
-	uint32_t PinRelayManualUSB;
-
-	RelayState relay_switch_state;
-	SwitchManualUsbState manual_usb_switch_state;
+	GPIO_TypeDef *GPIO;
+	uint32_t 	  Pin;
 } RelayTypedef;
 
-void InitRelays (void);
+void SetRelayState (const RelayTypedef *relay, RelayState state);
 
 #endif /* INC_RELAYS_H_ */
