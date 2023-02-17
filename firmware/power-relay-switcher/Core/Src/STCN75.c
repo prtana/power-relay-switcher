@@ -11,8 +11,8 @@ void STNC75_Initialize (STCN75_Typedef *dev, I2C_HandleTypeDef *i2cHandle)
 {
 	dev->i2cHandle			= i2cHandle;
 	dev->temp_C 			= 0;
-	dev->hysteresis_temp_C 	= 0;
-	dev->overlimit_temp_C	= 0;
+	dev->hysteresis_temp_C 	= 30;
+	dev->overlimit_temp_C	= 35;
 
 	WriteHysteresisTemperature(dev, dev->hysteresis_temp_C);
 	WriteOverlimitTemperature(dev, dev->overlimit_temp_C);
