@@ -25,6 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "channels.h"
 #include "STCN75.h"
+#include "fan.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,7 +49,8 @@ RTC_HandleTypeDef hrtc;
 
 /* USER CODE BEGIN PV */
 extern bool any_switch_toggled;
-uint8_t check = 0;
+STCN75_Typedef temp_sensor;
+FanTypedef fan;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,7 +63,7 @@ static void MX_RTC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-STCN75_Typedef temp_sensor;
+
 /* USER CODE END 0 */
 
 /**
@@ -98,6 +100,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   SetRelaysPositions(true);
   STNC75_Initialize(&temp_sensor, &hi2c1);
+  Fan_Initialize(&fan);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -256,7 +259,6 @@ static void MX_RTC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN RTC_Init 2 */
-  // HAL_RTC_RegisterCallback();
 
   /* USER CODE END RTC_Init 2 */
 
@@ -276,27 +278,21 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, RELAY_4_OUT_Pin|RELAY_3_OUT_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, RELAY_4_OUT_Pin|RELAY_3_OUT_Pin|FAN_CTRL_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, RELAY_1_OUT_Pin|RELAY_2_OUT_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : RELAY_1_USB_MAN_Pin RELAY_1_IN_Pin RELAY_2_USB_MAN_Pin RELAY_2_IN_Pin
-                           RELAY_3_USB_MAN_Pin RELAY_4_USB_MAN_Pin RELAY_4_IN_Pin */
+                           RELAY_3_USB_MAN_Pin RELAY_3_IN_Pin RELAY_4_USB_MAN_Pin RELAY_4_IN_Pin */
   GPIO_InitStruct.Pin = RELAY_1_USB_MAN_Pin|RELAY_1_IN_Pin|RELAY_2_USB_MAN_Pin|RELAY_2_IN_Pin
-                          |RELAY_3_USB_MAN_Pin|RELAY_4_USB_MAN_Pin|RELAY_4_IN_Pin;
+                          |RELAY_3_USB_MAN_Pin|RELAY_3_IN_Pin|RELAY_4_USB_MAN_Pin|RELAY_4_IN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : RELAY_3_IN_Pin */
-  GPIO_InitStruct.Pin = RELAY_3_IN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(RELAY_3_IN_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : RELAY_4_OUT_Pin RELAY_3_OUT_Pin */
-  GPIO_InitStruct.Pin = RELAY_4_OUT_Pin|RELAY_3_OUT_Pin;
+  /*Configure GPIO pins : RELAY_4_OUT_Pin RELAY_3_OUT_Pin FAN_CTRL_Pin */
+  GPIO_InitStruct.Pin = RELAY_4_OUT_Pin|RELAY_3_OUT_Pin|FAN_CTRL_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -308,6 +304,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : FAN_TACH_Pin */
+  GPIO_InitStruct.Pin = FAN_TACH_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(FAN_TACH_GPIO_Port, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI0_1_IRQn, 0, 0);
@@ -338,21 +340,6 @@ void Error_Handler(void)
   {
   }
   /* USER CODE END Error_Handler_Debug */
-}
-
-void HAL_RTCEx_WakeUpTimerEventCallback (RTC_HandleTypeDef *hrtc)
-{
-	ReadTemperature(&temp_sensor);
-	if (temp_sensor.temp_C > temp_sensor.overlimit_temp_C)
-	{
-		// activate fan
-		return;
-	}
-	if (temp_sensor.temp_C < temp_sensor.hysteresis_temp_C)
-	{
-		// deactivate fan
-		return;
-	}
 }
 
 #ifdef  USE_FULL_ASSERT
