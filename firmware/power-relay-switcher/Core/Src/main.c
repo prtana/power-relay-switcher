@@ -324,7 +324,20 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_RTCEx_WakeUpTimerEventCallback (RTC_HandleTypeDef *hrtc)
+{
+	ReadTemperature(&temp_sensor);
+	if (temp_sensor.temp_C > temp_sensor.overlimit_temp_C)
+	{
+		Fan_SetState (&fan, FAN_RUNNING);
+		return;
+	}
+	if (temp_sensor.temp_C < temp_sensor.hysteresis_temp_C)
+	{
+		Fan_SetState (&fan, FAN_STOPPED);
+		return;
+	}
+}
 /* USER CODE END 4 */
 
 /**
