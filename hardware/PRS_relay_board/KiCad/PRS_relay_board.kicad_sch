@@ -6,7 +6,7 @@
 
   (title_block
     (title "PRS Relay Board")
-    (date "2021-10-12")
+    (date "2023-02-20")
     (rev "1.0")
     (company "Deeply Embedded OÜ")
     (comment 1 "Designed by: Priit Tänav")
@@ -975,10 +975,10 @@
       (reference "R41") (unit 1) (value "-") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061931d61/00000000-0000-0000-0000-0000619417da"
-      (reference "R42") (unit 1) (value "R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+      (reference "R42") (unit 1) (value "4k7") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061931d61/00000000-0000-0000-0000-0000619417e0"
-      (reference "R43") (unit 1) (value "R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+      (reference "R43") (unit 1) (value "4k7") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061931d61/00000000-0000-0000-0000-0000619a5f71"
       (reference "R44") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
