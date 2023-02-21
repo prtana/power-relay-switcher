@@ -27,6 +27,8 @@
 #include "usbd_cdc_if.h"
 #include "STCN75.h"
 #include "fan.h"
+#include "scpi-def.h"
+#include "scpi/scpi.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,6 +54,8 @@ RTC_HandleTypeDef hrtc;
 extern bool any_switch_toggled;
 STCN75_Typedef temp_sensor;
 FanTypedef fan;
+scpi_t scpi_context;
+extern SCPIIntermediateBufferTypedef scpi_intermediate_buffer;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -102,6 +106,7 @@ int main(void)
   SetRelaysPositions(true);
   STNC75_Initialize(&temp_sensor, &hi2c1);
   Fan_Initialize(&fan);
+  SCPI_Initialize(&scpi_context);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,6 +119,11 @@ int main(void)
 		  any_switch_toggled = false;
 	  }
 
+	  if (scpi_intermediate_buffer.new_data_available)
+	  {
+		  scpi_intermediate_buffer.new_data_available = false;
+		  SCPI_Input(&scpi_context, scpi_intermediate_buffer.buffer, scpi_intermediate_buffer.length);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -138,7 +148,6 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI
                               |RCC_OSCILLATORTYPE_HSI48;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
@@ -164,7 +173,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1|RCC_PERIPHCLK_RTC
                               |RCC_PERIPHCLK_USB;
   PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
