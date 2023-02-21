@@ -90,6 +90,11 @@ void Error_Handler(void);
 #define RELAY_1_OUT_GPIO_Port GPIOA
 #define RELAY_2_OUT_Pin GPIO_PIN_9
 #define RELAY_2_OUT_GPIO_Port GPIOA
+#define FAN_CTRL_Pin GPIO_PIN_3
+#define FAN_CTRL_GPIO_Port GPIOB
+#define FAN_TACH_Pin GPIO_PIN_4
+#define FAN_TACH_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
