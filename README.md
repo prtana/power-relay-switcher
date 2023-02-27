@@ -69,8 +69,12 @@ The following SCPI commands are supported:
 
 #### Usage Example
 - Determine the COM port in use
-- Use your preferred terminal program to send commands or use for example python for automation
+- Use your preferred terminal program. In this case PUTTY is used, the COM port is `/dev/ttyACM1` and baudrate is selected `115200`. 
 
+![PUTTY Configuration](/assets/PUTTY%20PowerRelaySwitcher.png?raw=true)
+- For PUTTY, make sure to select `Force on` for `Local echo` to see the typed text and `Local line editing` to send the whole line at once rather than character by character.
+
+![PUTTY Configuration](/assets/PUTTY%20Configuration%202.png?raw=true)
 
 ## Project Overview
 
