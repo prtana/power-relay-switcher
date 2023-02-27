@@ -68,13 +68,17 @@ The following SCPI commands are supported:
 - Example to query relays one to four: `ROUT:OPEN? (1:4)\n`; returns in case if relay one is closed and two to four are open: `0,1,1,1\n`.
 
 #### Usage Example
-- Determine the COM port in use
-- Use your preferred terminal program. In this case PUTTY is used, the COM port is `/dev/ttyACM1` and baudrate is selected `115200`. 
+- Determine the COM port in use.
+- Use your preferred terminal program. In this case **PUTTY** is used, the COM port is `/dev/ttyACM1` and baudrate is selected `115200`. 
 
 ![PUTTY Configuration](/assets/PUTTY%20PowerRelaySwitcher.png?raw=true)
-- For PUTTY, make sure to select `Force on` for `Local echo` to see the typed text and `Local line editing` to send the whole line at once rather than character by character.
+- For PUTTY, make sure to select `Force on` for `Local echo` and `Local line editing` to see the typed text and to send the whole line at once rather than character by character.
 
 ![PUTTY Configuration](/assets/PUTTY%20Configuration%202.png?raw=true)
+
+- Example comminucation is as follows. Note that a newline character `\n` can be entered in PUTTY by `Ctrl + J` and is displayed as `^J`.
+
+![PUTTY Example Communication](/assets/PUTTY%20Example.png?raw=true)
 
 ## Project Overview
 
