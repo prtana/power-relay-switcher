@@ -11,7 +11,8 @@
 #include <stdbool.h>
 #include "relays.h"
 
-typedef struct {
+typedef struct
+{
 	GPIO_TypeDef *GPIO;
 	uint32_t	  Pin;
 } SwitchTypedef;

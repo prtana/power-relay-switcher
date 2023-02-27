@@ -13,10 +13,24 @@ void SetRelayState (const RelayTypedef *relay, RelayState state)
 {
 	if (state == RELAY_CLOSED)
 	{
-		HAL_GPIO_WritePin(relay->GPIO, relay->Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(relay->GPIO, relay->Pin, GPIO_PIN_SET);
 	}
 	else if (state == RELAY_OPEN)
 	{
-		HAL_GPIO_WritePin(relay->GPIO, relay->Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(relay->GPIO, relay->Pin, GPIO_PIN_RESET);
+	}
+}
+
+RelayState GetRelayState (const RelayTypedef *relay)
+{
+	GPIO_PinState pin_state = HAL_GPIO_ReadPin(relay->GPIO, relay->Pin);
+
+	if (pin_state == GPIO_PIN_SET)
+	{
+		return RELAY_CLOSED;
+	}
+	else
+	{
+		return RELAY_OPEN;
 	}
 }
