@@ -4,10 +4,14 @@
 
 The device was designed for the automation of running battery pack management unit learning cycles for batteries up to a capacity of 200 Ah. In that application it is to be used in conjunction with a power supply, an electronic load and a multimeter. These battery learning cycles require charging-resting-discharging-resting periods in excess of 24 hours which are cumbersome for an operator to manually manage having to connect and disconnect a power supply and an electronic load at the exact moments determined by the learning cycle.
 
+![Power Relay Switcher](/assets/power_relay_switcher.png?raw=true)
+
 ## User's Guide
 
 ### Front Panel
 On the front panel there is a main **ON-OFF** rocker switch and **two toggle switches: USB/Manual** and **Close/Open** together with **two status LEDs** per relay. 
+
+![Front Panel](/assets/front_panel.png?raw=true)
 
 #### USB/Manual Switch
 The **USB/Manual** switch allows the operator to choose whether the relay ought to be operated via **USB** using **SCPI** commands or **manually**. 
@@ -28,6 +32,8 @@ On the rear panel there are:
 - **Terminal blocks** with plugs for connecting to the relays' **Normally Open** (NO) and **Common** (COM) pins
 - **Cooling fan**
 - **230 V AC** mains C14 socket
+
+![Rear Panel](/assets/rear_panel.png?raw=true)
 
 ### SCPI
 The following SCPI commands are supported:
