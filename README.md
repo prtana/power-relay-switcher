@@ -6,6 +6,21 @@ The device was designed for the automation of running battery pack management un
 
 ## User's Guide
 
+### Front Panel
+On the front panel there is a main **ON-OFF** rocker switch and **two toggle switches: USB/Manual** and **Close/Open** together with **two status LEDs** per relay. 
+
+#### USB/Manual Switch
+The **USB/Manual** switch allows the operator to choose whether the relay ought to be operated via **USB** using **SCPI** commands or **manually**. 
+
+- If the **USB/Manual** switch is at the **USB** position, the **Close/Open** switch is disabled. 
+- If the **USB/Manual** switch is switched from **USB** to **Manual**, the relay will be set to the position determined by the **Close/Open** switch. 
+- If the **USB/Manual** switch is switched from **Manual** to **USB**, the relay will remain in the position last set by the **Close/Open** switch until a new **SCPI** command is sent to close or open it.
+
+#### Close/Open Switch
+The **Close/Open** switch allows the operator to manually close and open the relay contacts if the **USB/Manual** switch is at the **Manual** position. 
+
+#### Status LEDs
+
 
 ## Project Overview
 
