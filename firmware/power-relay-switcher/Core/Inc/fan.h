@@ -8,8 +8,6 @@
 #ifndef INC_FAN_H_
 #define INC_FAN_H_
 
-#include <stdbool.h>
-
 typedef enum
 {
 	FAN_RUNNING = 0,

@@ -15,7 +15,7 @@ SwitchClosedOpenState ReadClosedOpenSwitchState (const SwitchTypedef *_switch)
 													  _switch->Pin);
 
 	SwitchClosedOpenState switch_state;
-	if (switch_pin_state == GPIO_PIN_RESET)
+	if (switch_pin_state == GPIO_PIN_SET)
 	{
 		switch_state = SWITCH_CLOSED;
 	}
