@@ -20,8 +20,27 @@ The **USB/Manual** switch allows the operator to choose whether the relay ought 
 The **Close/Open** switch allows the operator to manually close and open the relay contacts if the **USB/Manual** switch is at the **Manual** position. 
 
 #### Status LEDs
+There are two status LEDs per relay which indicate whether the relay contacts are in the **Closed** or **Open** position. 
+
+### Rear Panel
+On the rear panel there are:
+- **USB Type-B** socket for SCPI control
+- **Terminal blocks** with plugs for connecting to the relays' **Normally Open** (NO) and **Common** (COM) pins
+- **Cooling fan**
+- **230 V AC** mains C14 socket
+
+### SCPI
+The following SCPI commands are supported:
+
+- *IDN?\n
+- ROUTe:CLOSe (\<channel list\>)\n
+- ROUTe:OPEN (\<channel list\>)\n
+- ROUTe:CLOSe? (\<channel list\>)\n
+- ROUTe:OPEN? (\<channel list\>)\n
 
 
+
+  
 ## Project Overview
 
 ### Firmware
