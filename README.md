@@ -44,22 +44,26 @@ The following SCPI commands are supported:
 
 #### ROUTe:CLOSe (\<channel list\>)\n
 - Closes the relays specified by the **\<channel list\>**.
-- The relay's **USB/Manual** switch has to be set to **USB** in order to control it using SCPI.
+- The relay's **USB/Manual** switch has to be set to **USB** in order to switch it using SCPI.
 - Returns nothing.
 - Example to close relays one and four: **ROUT:CLOS (1,4)\n**
 
 #### ROUTe:CLOSe? (\<channel list\>)\n
--
--
--
--
+- Queries whether the relays specified by the **\<channel list\>** are closed.
+- Returns the status of queried relays in a comma seperated form, where 1 - closed, 0 - open.
+- Example to query relays one to four: **ROUT:CLOS? (1:4)\n**; returns if relay one is closed and two to four are open: **1,0,0,0\n**
 
-#### 
-- Closes the relays specified by the \<channel list\>. 
-- The relay's **USB/Manual** switch has to be set to **USB** in order to control it using SCPI.
+#### ROUTe:OPEN (\<channel list\>)\n
+- Opens the relays specified by the **\<channel list\>**. 
+- The relay's **USB/Manual** switch has to be set to **USB** in order to switch it using SCPI.
 - Returns nothing.
-- Example to close relays one and four: ROUT:CLOS (1,4)\n
-  
+- Example to open relays one to three: **ROUT:OPEN (1:3)\n**
+
+#### ROUTe:OPEN? (\<channel list\>)\n
+- Queries whether the relays specified by the **\<channel list\>** are open.
+- Returns the status of queried relays in a comma seperated form, where 1 - open, 0 - closed.
+- Example to query relays one to four: **ROUT:OPEN? (1:4)\n**; returns if relay one is closed and two to four are open: **0,1,1,1\n**
+
 ## Project Overview
 
 ### Firmware
