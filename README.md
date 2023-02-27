@@ -32,40 +32,45 @@ On the rear panel there are:
 ### SCPI
 The following SCPI commands are supported:
 
-- \*IDN?\n
-- ROUTe:CLOSe (\<channel list\>)\n
-- ROUTe:CLOSe? (\<channel list\>)\n
-- ROUTe:OPEN (\<channel list\>)\n
-- ROUTe:OPEN? (\<channel list\>)\n
+- `*IDN?\n`
+- `ROUTe:CLOSe (<channel list>)\n`
+- `ROUTe:CLOSe? (<channel list>)\n`
+- `ROUTe:OPEN (<channel list>)\n`
+- `ROUTe:OPEN? (<channel list>)\n`
 
-**\<channel list\>** is a list of relay channels to be switched or queried. It can be a single channel, i.e **2**, a comma seperated list, i.e **2,4** or a range, i.e **1-3**.
+`<channel list\>` is a list of relay channels to be switched or queried. It can be a single channel, i.e `2`, a comma seperated list, i.e `2,4` or a range, i.e `1-3`.
 
 #### \*IDN?\n
 - Device identification query.
 - Returns the vendor, model, serial number and firmware version in comma seperated format.
-- Example **\*IDN?\n** returns **Deeply Embedded,Power Relay Switcher,0,0\n**.
+- Example `*IDN?\n` returns `Deeply Embedded,Power Relay Switcher,0,0\n`.
 
 #### ROUTe:CLOSe (\<channel list\>)\n
-- Closes the relays specified by the **\<channel list\>**.
+- Closes the relays specified by the `<channel list\>`.
 - The relay's **USB/Manual** switch has to be set to **USB** in order to switch it using SCPI.
 - Returns nothing.
-- Example to close relays one and four: **ROUT:CLOS (1,4)\n**
+- Example to close relays one and four: `ROUT:CLOS (1,4)\n`
 
 #### ROUTe:CLOSe? (\<channel list\>)\n
-- Queries whether the relays specified by the **\<channel list\>** are closed.
+- Queries whether the relays specified by the `<channel list\>` are closed.
 - Returns the status of queried relays in a comma seperated form, where 1 - closed, 0 - open.
-- Example to query relays one to four: **ROUT:CLOS? (1:4)\n**; returns in case if relay one is closed and two to four are open: **1,0,0,0\n**
+- Example to query relays one to four: `ROUT:CLOS? (1:4)\n`; returns in case if relay one is closed and two to four are open: `1,0,0,0\n`.
 
 #### ROUTe:OPEN (\<channel list\>)\n
-- Opens the relays specified by the **\<channel list\>**. 
+- Opens the relays specified by the `<channel list\>`. 
 - The relay's **USB/Manual** switch has to be set to **USB** in order to switch it using SCPI.
 - Returns nothing.
-- Example to open relays one to three: **ROUT:OPEN (1:3)\n**
+- Example to open relays one to three: `ROUT:OPEN (1:3)\n`.
 
 #### ROUTe:OPEN? (\<channel list\>)\n
-- Queries whether the relays specified by the **\<channel list\>** are open.
+- Queries whether the relays specified by the `<channel list\>` are open.
 - Returns the status of queried relays in a comma seperated form, where 1 - open, 0 - closed.
-- Example to query relays one to four: **ROUT:OPEN? (1:4)\n**; returns in case if relay one is closed and two to four are open: **0,1,1,1\n**
+- Example to query relays one to four: `ROUT:OPEN? (1:4)\n`; returns in case if relay one is closed and two to four are open: `0,1,1,1\n`.
+
+#### Usage Example
+- Determine the COM port in use
+- Use your preferred terminal program to send commands or use for example python for automation
+
 
 ## Project Overview
 
