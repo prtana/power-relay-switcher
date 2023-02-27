@@ -38,7 +38,7 @@ The following SCPI commands are supported:
 - `ROUTe:OPEN (<channel list>)\n`
 - `ROUTe:OPEN? (<channel list>)\n`
 
-`<channel list\>` is a list of relay channels to be switched or queried. It can be a single channel, i.e `2`, a comma seperated list, i.e `2,4` or a range, i.e `1-3`.
+`<channel list>` is a list of relay channels to be switched or queried. It can be a single channel, i.e `2`, a comma seperated list, i.e `2,4` or a range, i.e `1-3`.
 
 #### \*IDN?\n
 - Device identification query.
