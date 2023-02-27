@@ -38,9 +38,12 @@ The following SCPI commands are supported:
 - ROUTe:OPEN (\<channel list\>)\n
 - ROUTe:OPEN? (\<channel list\>)\n
 
-
+**\<channel list\>** is a list of relay channels to be switched or queried. It can be a single channel, i.e **2**, a comma seperated list, i.e **2,4** or a range, i.e **1-3**.
 
 #### \*IDN?\n
+- Device identification query.
+- Returns the vendor, model, serial number and firmware version in comma seperated format.
+- Example **\*IDN?\n** returns **Deeply Embedded,Power Relay Switcher,0,0\n**.
 
 #### ROUTe:CLOSe (\<channel list\>)\n
 - Closes the relays specified by the **\<channel list\>**.
@@ -51,7 +54,7 @@ The following SCPI commands are supported:
 #### ROUTe:CLOSe? (\<channel list\>)\n
 - Queries whether the relays specified by the **\<channel list\>** are closed.
 - Returns the status of queried relays in a comma seperated form, where 1 - closed, 0 - open.
-- Example to query relays one to four: **ROUT:CLOS? (1:4)\n**; returns if relay one is closed and two to four are open: **1,0,0,0\n**
+- Example to query relays one to four: **ROUT:CLOS? (1:4)\n**; returns in case if relay one is closed and two to four are open: **1,0,0,0\n**
 
 #### ROUTe:OPEN (\<channel list\>)\n
 - Opens the relays specified by the **\<channel list\>**. 
@@ -62,7 +65,7 @@ The following SCPI commands are supported:
 #### ROUTe:OPEN? (\<channel list\>)\n
 - Queries whether the relays specified by the **\<channel list\>** are open.
 - Returns the status of queried relays in a comma seperated form, where 1 - open, 0 - closed.
-- Example to query relays one to four: **ROUT:OPEN? (1:4)\n**; returns if relay one is closed and two to four are open: **0,1,1,1\n**
+- Example to query relays one to four: **ROUT:OPEN? (1:4)\n**; returns in case if relay one is closed and two to four are open: **0,1,1,1\n**
 
 ## Project Overview
 
