@@ -32,14 +32,33 @@ On the rear panel there are:
 ### SCPI
 The following SCPI commands are supported:
 
-- *IDN?\n
+- \*IDN?\n
 - ROUTe:CLOSe (\<channel list\>)\n
-- ROUTe:OPEN (\<channel list\>)\n
 - ROUTe:CLOSe? (\<channel list\>)\n
+- ROUTe:OPEN (\<channel list\>)\n
 - ROUTe:OPEN? (\<channel list\>)\n
 
 
 
+#### \*IDN?\n
+
+#### ROUTe:CLOSe (\<channel list\>)\n
+- Closes the relays specified by the **\<channel list\>**.
+- The relay's **USB/Manual** switch has to be set to **USB** in order to control it using SCPI.
+- Returns nothing.
+- Example to close relays one and four: **ROUT:CLOS (1,4)\n**
+
+#### ROUTe:CLOSe? (\<channel list\>)\n
+-
+-
+-
+-
+
+#### 
+- Closes the relays specified by the \<channel list\>. 
+- The relay's **USB/Manual** switch has to be set to **USB** in order to control it using SCPI.
+- Returns nothing.
+- Example to close relays one and four: ROUT:CLOS (1,4)\n
   
 ## Project Overview
 
