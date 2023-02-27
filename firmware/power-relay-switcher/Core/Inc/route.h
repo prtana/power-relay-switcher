@@ -1,7 +1,7 @@
 /*
- * channels.h
+ * route.h
  *
- *  Created on: Jan 26, 2022
+ *  Created on: Feb 25, 2023
  *      Author: Priit Tänav
  */
 
@@ -23,33 +23,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef INC_CHANNELS_H_
-#define INC_CHANNELS_H_
+#ifndef INC_ROUTE_H_
+#define INC_ROUTE_H_
 
-#include "relays.h"
-#include "switches.h"
-#include "params.h"
+#include "scpi/scpi.h"
 
-#define NUM_CHANNELS	4
+scpi_result_t scpi_cmd_routeClose (scpi_t *context);
+scpi_result_t scpi_cmd_routeClosedQ (scpi_t *context);
+scpi_result_t scpi_cmd_routeOpen (scpi_t *context);
+scpi_result_t scpi_cmd_routeOpenQ (scpi_t *context);
 
-typedef enum
-{
-	SCPI_CLOSED = 0,
-	SCPI_OPEN,
-	SCPI_VOID,
-} ScpiClosedOpenState;
-
-typedef struct
-{
-	RelayTypedef  		relay;
-	SwitchTypedef 		switch_closed_open;
-	SwitchTypedef 		switch_usb_man;
-	ScpiClosedOpenState	scpi_closed_open;
-} RelayChannelTypedef;
-
-void SetRelaysPositions (bool is_initial_setup);
-bool isRouteOpen (int32_t channelIndex, bool *result, int16_t *err);
-bool routeOpen (ChannelList *channelList, int16_t *err);
-bool routeClose (ChannelList *channelList, int16_t *err);
-
-#endif /* INC_CHANNELS_H_ */
+#endif /* INC_ROUTE_H_ */

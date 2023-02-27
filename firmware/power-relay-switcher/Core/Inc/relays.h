@@ -8,7 +8,7 @@
 #ifndef INC_RELAYS_H_
 #define INC_RELAYS_H_
 
-#include <stdbool.h>
+#include "stm32l0xx_hal.h"
 
 typedef enum
 {
@@ -23,5 +23,6 @@ typedef struct
 } RelayTypedef;
 
 void SetRelayState (const RelayTypedef *relay, RelayState state);
+RelayState GetRelayState (const RelayTypedef *relay);
 
 #endif /* INC_RELAYS_H_ */

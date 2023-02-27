@@ -1,8 +1,8 @@
 /*
- * channels.h
+ * params.h
  *
- *  Created on: Jan 26, 2022
- *      Author: Priit Tänav
+ *  Created on: Feb 25, 2023
+ *      Author: priit
  */
 
 /* SCPI implementation code courtesy of Envox d.o.o.
@@ -23,33 +23,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef INC_CHANNELS_H_
-#define INC_CHANNELS_H_
+#ifndef INC_PARAMS_H_
+#define INC_PARAMS_H_
 
-#include "relays.h"
-#include "switches.h"
-#include "params.h"
+#include "scpi/scpi.h"
+#include "index.h"
 
-#define NUM_CHANNELS	4
+void param_channels(scpi_t *context,
+		ChannelList *channelList,
+		scpi_bool_t mandatory);
+void param_channels_two (scpi_t *context,
+		scpi_parameter_t *parameter,
+		ChannelList *channelList);
 
-typedef enum
-{
-	SCPI_CLOSED = 0,
-	SCPI_OPEN,
-	SCPI_VOID,
-} ScpiClosedOpenState;
+bool isChannelListValid (ChannelList *channelList);
+bool isNumChannelsValid (int8_t numChannels);
+bool areChannelIndicesValid (ChannelList *channelList);
+bool isChannelIndexValid (int32_t index);
 
-typedef struct
-{
-	RelayTypedef  		relay;
-	SwitchTypedef 		switch_closed_open;
-	SwitchTypedef 		switch_usb_man;
-	ScpiClosedOpenState	scpi_closed_open;
-} RelayChannelTypedef;
-
-void SetRelaysPositions (bool is_initial_setup);
-bool isRouteOpen (int32_t channelIndex, bool *result, int16_t *err);
-bool routeOpen (ChannelList *channelList, int16_t *err);
-bool routeClose (ChannelList *channelList, int16_t *err);
-
-#endif /* INC_CHANNELS_H_ */
+#endif /* INC_PARAMS_H_ */
