@@ -89,5 +89,5 @@ The following SCPI commands are supported:
 ## Project Overview
 
 ### Firmware
-
+The C code for the STM32L062K8Tx microcontroller is in the [/firmware/power-relay-switcher](https://github.com/prtana/power-relay-switcher/tree/main/firmware/power-relay-switcher) directory.
 ### Hardware
