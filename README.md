@@ -90,4 +90,26 @@ The following SCPI commands are supported:
 
 ### Firmware
 The C code for the STM32L062K8Tx microcontroller is in the [/firmware/power-relay-switcher](https://github.com/prtana/power-relay-switcher/tree/main/firmware/power-relay-switcher) directory.
+
 ### Hardware
+There are relevant files in the [/hardware](https://github.com/prtana/power-relay-switcher/tree/main/hardware) directory for the three PCBs: the main PCB and the aluminium front and back panels.
+
+#### Main PCB
+For the main PCB the following resources are available:
+- 3D step model
+- Bill of materials
+- KiCad project
+- Gerber files
+- PDF schematic
+
+#### Front Panel
+For the aluminium front panel the following resources are available:
+- 3D step model
+- KiCad project
+- Gerber files
+
+#### Rear Panel
+For the aluminium rear panel the following resources are available:
+- 3D step model
+- KiCad project
+- Gerber files
