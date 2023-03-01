@@ -96,20 +96,20 @@ There are relevant files in the [/hardware](https://github.com/prtana/power-rela
 
 #### Main PCB
 For the main PCB the following resources are available:
-- 3D step model
-- Bill of materials
-- KiCad project
-- Gerber files
-- PDF schematic
+- [3D step model](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_relay_board/3D)
+- [Bill of materials](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_relay_board/BOM)
+- [KiCad project](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_relay_board/KiCad)
+- [Gerber files](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_relay_board/Gerbers)
+- [PDF schematic](https://github.com/prtana/power-relay-switcher/blob/main/hardware/PRS_relay_board/PRS_relay_board.pdf)
 
 #### Front Panel
 For the aluminium front panel the following resources are available:
-- 3D step model
-- KiCad project
-- Gerber files
+- [3D step model](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_front_panel/3D)
+- [KiCad project](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_front_panel/KiCad)
+- [Gerber files](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_front_panel/Gerbers)
 
 #### Rear Panel
 For the aluminium rear panel the following resources are available:
-- 3D step model
-- KiCad project
-- Gerber files
+- [3D step model](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_rear_panel/3D)
+- [KiCad project](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_rear_panel/KiCad)
+- [Gerber files](https://github.com/prtana/power-relay-switcher/tree/main/hardware/PRS_rear_panel/Gerbers)
